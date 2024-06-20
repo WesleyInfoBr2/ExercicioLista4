@@ -10,6 +10,9 @@ page_title="Lista de Exercício 4",
 
 st.header("Exercício Projetos")
 
+st.write("Projeto no Github [link]('https://github.com/WesleyInfoBr2/ExercicioLista4')")
+st.write("Projeto no Streamlit [link]('https://exerciciolista4.streamlit.app/')")
+
 st.write("Os dados se referem aos valores futuros previstos para receita mensal de 5 projetos diferentes. A análise dos dados permitirá a decisão sobre o investitmento em um ou mais alternativas de projetos. Neste cenário, os dados futuros se referem ao período de 2022 e 2023, logo, a data referência da análise é de dezembro/2021")
 
 arquivo = "https://raw.githubusercontent.com/WesleyInfoBr2/ExercicioLista4/main/projetos.csv" 
@@ -52,6 +55,6 @@ plt.title('2022')
 ip.timeseries('BM12_TJOVER12', year=2022).plot("MONTH", "VALUE ((% a.m.))", ax=ax)
 st.pyplot(fig)
 fig, ax = plt.subplots()
-plt.title('2022')
+plt.title('2023')
 ip.timeseries('BM12_TJOVER12', year=2023).plot("MONTH", "VALUE ((% a.m.))", ax=ax)
 st.pyplot(fig)
