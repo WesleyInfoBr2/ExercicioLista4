@@ -50,6 +50,7 @@ st.write("Gráficos de linha, apresentando os meses e valores das taxas, um para
 fig, ax = plt.subplots()
 plt.title('2022')
 ip.timeseries('BM12_TJOVER12', year=2022).plot("MONTH", "VALUE ((% a.m.))", ax=ax)
+st.pyplot(fig)
 fig, ax = plt.subplots()
 plt.title('2022')
 ip.timeseries('BM12_TJOVER12', year=2023).plot("MONTH", "VALUE ((% a.m.))", ax=ax)
