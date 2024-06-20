@@ -25,7 +25,7 @@ st.write("Apresentação da soma dos valores de cada projeto agrupado por ano")
 colunas = ['Projeto1', 'Projeto2', 'Projeto3', 'Projeto4', 'Projeto5']
 st.write(df.groupby('ano')[colunas].sum())
 
-st.write("Gráfico de dispersão cruzando os dados do Projeto1 e Projeto2, com marcadores verdes e em formato de estrela"
+st.write("Gráfico de dispersão cruzando os dados do Projeto1 e Projeto2, com marcadores verdes e em formato de estrela")
 fig, ax = plt.subplots()
 df.plot(kind = 'scatter', x = 'Projeto1', y = 'Projeto2', color='darkgreen', marker='*', ax=ax)
 st.pyplot(fig)
@@ -42,7 +42,7 @@ st.write("Busca na base do IPEADATA os indicadores relacionados a taxa de juros 
 busca_selic = ip.list_series('Selic')
 busca_selic
 
-st.write("Utilização da biblioteca do IPEADATA para apresentar os valores do indicador "Taxa de juros - Over / Selic - acumulada no mês" dos anos de 2022 e 2023")         
+st.write("Utilização da biblioteca do IPEADATA para apresentar os valores do indicador 'Taxa de juros - Over / Selic - acumulada no mês' dos anos de 2022 e 2023")         
 selic = ip.timeseries('BM12_TJOVER12', yearGreaterThan=2021, yearSmallerThan=2024)
 selic
 
